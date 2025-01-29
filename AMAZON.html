@@ -1,0 +1,1593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body{
+              background-color: #f2f2f2;
+          }
+          option{
+              background-color: #FFFF;
+              font-size: 14px;
+          }
+          .nav-link{
+              color: #FFFF;
+          }
+          #column-one{
+              display: flex;
+              flex-direction: row;
+              justify-content: space-between;
+            
+          }
+          #column-one{
+            margin-top:-20%;
+          }
+          #language:hover,
+         #address:hover,
+         #cart:hover,#ro:hover,#nav-logo:hover {
+         border-color: blueviolet;
+         
+      }
+      #navtwo:hover{
+            border: 1px solid white;
+            border-radius: 4px;
+            border-width: auto;
+           
+        }
+        .card-footer{
+            background-color: #FFFF;
+        }
+        #address:hover, #navlogo:hover, #language:hover, #signin:hover,#ro:hover,#nav-logo:hover{
+            border: 2px solid #FFFF;
+            border-radius: 4px;
+        }
+        .card{
+            border: 0;
+        }
+        #product-card{
+            border: 1px solid black;
+            border-radius: 3px;
+            width: 194px;
+            height: 280px;
+        }
+        
+        #product-body{
+           width: 146.4px;
+           height: 138.4px;
+        }
+        
+        #card-detail{
+            font-size: 14px;
+            font-weight: 500;
+            width: 146.4px;
+            height: 48px;
+        }
+        .badge{
+            background-color: rgb(204, 12, 57);
+            width: 56.39px;
+            height: 24px;
+            font-size: 14px;
+        }
+      </style>
+    <title>Document</title>
+</head>
+<body>
+   <!--HEADER  -->
+   <header>
+                 <!-- NAVIGATIONBAR-ONE -->
+        <nav class="navbar navbar-expand-lg" id="navbar-one" style="background-color:#0f1111 ; height: 60px;">
+            <!-- LEFT SIDE -->
+             <div class="navbar-nav" id="nav-left" style="width: 360.28px;height: 60px;">
+                <!-- NAV-LOGO -->
+                <div id="nav-logo" style="width: 129.73px;height: 60px;">
+                    <a href="#" style="width: 129.73px; height: 50px;"classnavbar-link><span><img src="https://lnct.ac.in/wp-content/uploads/2023/06/Amazon-logo-768x267-1.webp" alt="Amazon.in" width="98px" height="34" ></span>
+                    <span style="color: #FFFF; font-size: 17px;width: 14.73px;height: 14px;">.in</span></a>
+                </div>
+                <!-- ADDRESS -->
+                 <div class="navbar-item" id="address" style="width: 215px;height: 60px;" >
+                    <a href="#" style="width: 213px; height: 60px;" class="navbar-link">
+                        <span class="fa fa-map-marker" style="color: white; width: 15px;height: 18px;"></span>
+                        <span style="width: 177px; height: 30px;">
+                            <span><small style="color: azure;width: 177px;height: 14px;font-size: 13px;">Delivering to Khanadagiri 751030</small></span> 
+                            <span><strong style="color: #FFFF;width: 177px;height: 16px;font-size: 14px;">Update location</strong></span>
+                        </span>
+                    </a>
+                 </div>
+            </div>
+            <!-- SEARCH BAR -->
+            <div id="nav-search" style="width: 50%;">
+                <form action="">
+                    <div class="input-group mt-12 mb-12 ">
+                       <div class="input-group-prepend">
+                        <div >
+                        <select  name="" id="" data-spy="scroll" data-target="option" data-offset="50" style="width: 50px; height: 38px;font-size: 19.5px;background-color: grey;  border-radius: 3px;"  >
+                            <option value="" selected >All Categories</option>
+                            <option value="">Alexa Skills</option>
+                            <option value="">Amazon Devices</option>
+                            <option value="">Amazon Fashion</option>
+                            <option value="">Amazon Fresh</option>
+                            <option value="">Amazon Pharmacy</option>
+                            <option value="">Applicances</option>
+                            <option value="">Apps & Game</option>
+                            <option value="">Audible Audiobooks</option>
+                            <option value="">Baby</option>
+                            <option value="">Beauty</option>
+                            <option value="">Books</option>
+                            <option value="">Cars & Motorbik</option>
+                            <option value="">Clothing & Accesories</option>
+                            <option value="">Collectibles</option>
+                            <option value="">Computers & Accesories</option>
+                            <option value="">Deals</option>
+                            <option value="">Electronics</option>
+                            <option value="">Furniture</option>
+                            <option value="">Garden & Outdoors</option>
+                            <option value="">Gifts Card</option>
+                            <option value="">Grocery & Gourment Foods</option>
+                            <option value="">Health & Personal Care</option>
+                            <option value="">Home & Kitch</option>
+                            <option value="">Industrial & Scientific</option>
+                            <option value="">Jewellery</option>
+                            <option value="">Kindle Store</option>
+                            <option value="">Luggage & Bags</option>
+                            <option value="">Luxury Beauty</option>
+                            <option value="">Movies &Tv shows</option>
+                            <option value="">Music</option>
+                            <option value="">Pet Supplies</option>
+                        </select>
+                        
+                     </div>
+                       </div style="padding: 7px 10px 10px 0px; width:50%">
+                       <input type="text" class="form-control" placeholder="Search Amazon.in" style="font-weight: 500;">
+                      <div class="input-group-append">
+                         <button class="btn btn-outline-secondary" type="button" style="background-color: #FEBD69;">
+                             <i class="fa fa-search" style="color: black;"></i>
+                         </button>
+                      </div>
+                    </div>
+                 </form>
+            </div>
+       
+    
+        <!-- RIGHT SIDE  -->
+        <div class="navbar-nav ml-auto" style="width: 344.45px; height: 60px; display: flex; justify-content:flex-end;align-items: center;">
+          <!-- LANGUAGE -->
+          <div id="language" class="nav-item">
+              <button type="button" class="btn btn-outline-secondary dropdown-toggle" data-toggle="dropdown" style="color: #FFF; border: transparent;">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgKRZPmpFH2XlLOzoDC0FEbLYcMibxdOXhSA&" alt="" width="21.6px" height="16.2px"> EN
+              </button>
+              <div class="dropdown-menu dropdown-menu-right" style="position: absolute;">
+                  <div class="form-check form-check-dropdown-item">
+                      <label class="form-check-label">
+                          <input type="radio" class="form-check-input" name="optradio" checked>English
+                      </label>
+                  </div>
+                  <div class="dropdown-divider"></div>
+                  <div class="form-check form-check-dropdown-item">
+                      <label class="form-check-label">
+                          <input type="radio" class="form-check-input" name="optradio">हिन्दी-HI
+                      </label>
+                  </div>
+                  <div class="form-check dropdown-item">
+                      <label class="form-check-label">
+                          <input type="radio" class="form-check-input" name="optradio">தமிழ்-TA
+                      </label>
+                  </div>
+                  <div class="form-check dropdown-item">
+                      <label class="form-check-label">
+                          <input type="radio" class="form-check-input" name="optradio">తెలుగు-TE
+                      </label>
+                  </div>
+                  <div class="form-check dropdown-item">
+                      <label class="form-check-label">
+                          <input type="radio" class="form-check-input" name="optradio">ಕನ್ನಡ-KN
+                      </label>
+                  </div>
+                  <div class="form-check dropdown-item">
+                      <label class="form-check-label">
+                          <input type="radio" class="form-check-input" name="optradio">മലയാളം-ML
+                      </label>
+                  </div>
+                  <div class="form-check dropdown-item">
+                      <label class="form-check-label">
+                          <input type="radio" class="form-check-input" name="optradio">রাজস্ব-BN
+                      </label>
+                  </div>
+                  <div class="form-check dropdown-item">
+                      <label class="form-check-label">
+                          <input type="radio" class="form-check-input" name="optradio">मराठी-MR
+                      </label>
+                  </div>
+                  <div class="dropdown-divider"></div>
+                  <div class="dropdown-header">You are shopping on Amazon.in</div>
+                  <a href="#" class="dropdown-item">Change country/region</a>
+              </div>
+          </div>
+          <!-- SINGIN PAGE -->
+          <div id="signin" class="nav-item dropdown" style="width: 131.53px;height: 50px; background-color:#0f1111;">
+            <a href="#" class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown" style="background-color:#0f1111;width: 131.53px;height: 45px;" >
+                <small style="color: azure;font-size: 12px;">Hello,sign in</small>
+                        <br> <strong style="color: #FFFF;font-size: 14px;">Account & Lists</strong></li> 
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" style="background-color: #FFFF;">
+                <div style="width:400px;height: 50px;background-color:#FFFF;display: block;">
+                    <div style="display: flex;justify-content: center;flex-direction: column;align-items: center;">
+                        <button class="btn btn-warning" type="button" style="width: 130px;height: 30px;">Sign in</button>
+                        
+                        <p><small>New customer??</small><span><a href="#">Start here</a></span></p>
+                    </div>
+                   
+                    <div class="row" style="background-color: #FFFF;">
+                        <div class="col-6">
+                            <div class="footer-pad">
+                                <h5 style="font-size: 16px;">Your Lists</h5>
+                                <ul class="list-unstyled">
+                                    <li style="font-size: 14px;">Create a Wish List</li>
+                                    <li style="font-size: 14px;">Wish from Any Website</li>
+                                    <li style="font-size: 14px;">Baby Wishlist</li>
+                                    <li style="font-size: 14px;">Discover Your Style</li>
+                                    <li style="font-size: 14px;">Explore Showroom</li>
+                                    
+                                   
+                                </ul>
+                            </div>
+    
+                        </div>
+                        <div class="col-6">
+                            <div class="footer-pad">
+                                <h5 style="font-size: 16px;">Your Account</h5>
+                                <ul class="list-unstyled">
+                                    <li style="font-size: 14px;">Your Account</li>
+                                    <li style="font-size: 14px;">Your Orders</li>
+                                    <li style="font-size: 14px;">Your Wish List</li>
+                                    <li style="font-size: 14px;">Your Recommendations</li>
+                                    <li style="font-size: 14px;">Your Prime Membership</li>
+                                    <li style="font-size: 14px;">Your Prime Video</li>
+                                    <li style="font-size: 14px;">Your Subscribe & Save Items</li>
+                                    <li style="font-size: 14px;">Memberships & Subscriptions</li>
+                                    <li style="font-size: 14px;">Your Seller Account</li>
+                                    <li style="font-size: 14px;">Manage Your Content and Devices</li>
+                                    <li style="font-size: 14px;">Register for a free Business Accoun</li>
+                                </ul>
+                            </div>
+    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+         <!-- Returns & Orders -->
+         <div id="ro"  class="nav-item" style="width: 76.95px; height: 50px;">
+         <span><small style="color: azure; font-size: 14px;">Returns</small></span><br>
+          <span><strong style="color: #FFFF; font-size: 16px;">&Orders</strong></span>
+          </div>
+           <!-- Cart -->
+           <div id="cart" class="nav-item" style="width: 59px; height: 50px;">
+            <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpLE9fd0OtieIHrF4GxDMOuu3LoDmcOe5Y7w&s" alt="" height="50px" width="50px">
+         </div>
+      </div>
+    </nav>
+
+    <!-- NAVIGATIONBAR-TWO -->
+    <div class="navbar navbar-expand-sm" style="background-color: #232F3E; height: 40px;  ">
+        <div class="container-fluid" id="nav-two" >
+            
+           <ul class="navbar-nav" >
+           <!-- <li   class="navbar-toggler" type="button"  data-toggle="collapse" data-target="#Mynavbar">
+            <span class="navbar-toggler-icon"></span>
+           </li> -->
+           
+            <li class="nav-item"><a class="nav-link" href="#" style="color: #FFFF;" id="navtwo" >MX Player</a></li>
+            <li class="nav-item"><a class="nav-link" href="#" style="color: #FFFF;" id="navtwo" >Sell</a></li>
+            <li class="nav-item"><a class="nav-link" href="#" style="color: #FFFF;" id="navtwo" >Best Sellers</a></li>
+            <li class="nav-item"><a class="nav-link" href="#" style="color: #FFFF;" id="navtwo" >Today's Deal</a></li>
+            <li class="nav-item"><a class="nav-link" href="#" style="color: #FFFF;" id="navtwo" >Mobiles</a></li>
+            <li class="nav-item"><a class="nav-link" href="#" style="color: #FFFF;" id="navtwo" >Customer Service</a></li>
+            <li class="nav-item"><a class="nav-link" href="#" style="color: #FFFF;" id="navtwo" >Electronics</a></li>
+            <li class="nav-item"><a class="nav-link" href="#" style="color: #FFFF;" id="navtwo" >Home & Kitchen</a></li>
+            <li class="nav-item dropdown" id="navtwo">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown"  href="#" style="text-decoration: none;color: #FFFF;">
+                    Prime</a>
+                <div id="outer" class="dropdown-menu"  >
+                    <a href="#" style="width: 200px;height: 200px;border: 8px solid white;">
+                        <img src="https://m.media-amazon.com/images/G/31/prime/NavFlyout/TryPrime/2018/Apr/IN-Prime-PIN-TryPrime-MultiBen-Apr18-400x400._CB612889281_.jpg" alt="" width="300px" height="300px">
+                    </a>
+                    
+                </div>
+                
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#" style="color: #FFFF;" id="navtwo" >Amazon Pay</a></li>
+            <li class="nav-item"><a class="nav-link" href="#" style="color: #FFFF;" id="navtwo" >New Realese</a></li>
+            <li class="nav-item"><a class="nav-link" href="#" style="color: #FFFF;" id="navtwo" >Fashion</a></li>
+            <li class="nav-item"><a class="nav-link" href="#" style="color: #FFFF;" id="navtwo" >Car & Motorbikes</a></li>
+            <li class="nav-item"><a class="nav-link" href="#" style="color: #FFFF;" id="navtwo" >Computers</a></li>
+           
+           </ul>
+        </div>
+    </div>
+</header>
+ <!-- Main Body -->
+ <section id="mainbody">
+    <div id="Offers" class="carousel slide" data-ride="carousel">
+
+        <!-- Indicator -->
+        <ul class="carousel-indicators">
+            <li data-target="#Offers" data-slide-to="0" class="active"></li>
+            <li data-target="#Offers" data-slide-to="1"></li>
+            <li data-target="#Offers" data-slide-to="2"></li>
+            <li data-target="#Offers" data-slide-to="3"></li>
+            <li data-target="#Offers" data-slide-to="4"></li>
+            <li data-target="#Offers" data-slide-to="5"></li>
+            <li data-target="#Offers" data-slide-to="6"></li>
+            <li data-target="#Offers" data-slide-to="7"></li>
+            <li data-target="#Offers" data-slide-to="8"></li>
+            <li data-target="#Offers" data-slide-to="9"></li>
+        </ul>
+
+          <div class="carousel-inner">
+              <div class="carousel-item active">
+                  <img src="https://images-eu.ssl-images-amazon.com/images/G/31/IN-Events/Arundhati/CS24_GW_PC_Hero-christmas-store2x_1._CB537976959_.jpg" alt="hjgvjd" width="1600" height="600">
+              </div>
+              <div class="carousel-item">
+                <img src="https://images-eu.ssl-images-amazon.com/images/G/31/INSLGW/pc_unrec_refresh._CB555261616_.jpg" alt="Chicago" width="1600" height="600">
+               </div>
+               <div class="carousel-item">
+                 <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img24/Beauty/SVD/Dec/Makeup_PCn._CB540861816_.jpg" alt="Chicago" width="1600" height="600">
+               </div>
+               <div class="carousel-item">
+                 <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img23/Consumables/X-GL/Feb5/PC_Hero_1_3000._CB582457311_.jpg" alt="Chicago" width="1600" height="600">
+               </div>
+               <div class="carousel-item">
+                 <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img23/GW/P42/Boult_3000x1200-PC._CB543542644_.jpg" alt="Chicago" width="1600" height="600">
+               </div>
+               <div class="carousel-item">
+                 <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/MA2024/GW/Unrec/Xmas/2-1._CB537928780_.jpg" alt="Chicago" width="1600" height="600">
+               </div>
+               <div class="carousel-item">
+                 <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/Wireless/devjyoti/GW/Uber/Nov/Nov_New_3000x1200._CB542180708_.jpg" alt="Chicago" width="1600" height="600">
+               </div>
+               <div class="carousel-item">
+                 <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/Shoes/Unrec/Xmas/PC/3k/934044700._CB537981825_.jpg" alt="Chicago" width="1600" height="600">
+               </div>
+               <div class="carousel-item">
+                 <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img24/Sports/December/GW/U499/5298-Sports----Camping-carnival---Hero-REC-PC-N2._CB539701212_.jpg" alt="Chicago" width="1600" height="600">
+               </div>
+               <div class="carousel-item">
+                 <img src="https://images-eu.ssl-images-amazon.com/images/G/31/BISS_2024/Dec/GW/ATF/11th/PC/PC_3000x1200_1._CB539627409_.jpg" alt="Chicago" width="1600" height="600">
+               </div>
+           </div> 
+
+               <!-- Left and right controls -->
+                 <a class="carousel-control-prev" href="#Offers" data-slide="prev">
+                   <span class="carousel-control-prev-icon" style="background-color: black;"></span>
+                 </a>
+                 <a class="carousel-control-next" href="#Offers" data-slide="next">
+                   <span class="carousel-control-next-icon" style="background-color: black;"></span>
+                 </a>
+
+
+
+
+                   <!-- display of products Column one -->
+    <div class="container-fluid" id="column-one">
+        <div class="row">
+           <div class="col-md-3">
+               <div class="card" style="height:420px;background-color: #FFFF;">
+                 <div class="card-header" style="height: 54.1px; background-color: #FFFF;"><h5 style=" font-size:20px ; font-weight: bold;">Revamp your home in style</h5></div>
+                 <div class="card-content container-fluid">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="card" style="height: 138.2px;background-color:bl;">
+                                <a href="#" style="text-decoration: none;color: black; font-size: 12px;" >
+                                    <img class="card-img-top" src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/New/1x/final/186x116_Home_furnishings_2._SY116_CB555624324_.jpg" style="height: 102.2px;">
+                                     <p class="card-text">Cushion covers, bedsheets & more.</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="card" style="height: 138.2px;background-color:bl;">
+                                <a href="#" style="text-decoration: none;color: black; font-size: 12px;" >
+                                    <img class="card-img-top" src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/New/1x/final/186x116_Home_decor_1._SY116_CB555624324_.jpg" style="height: 102.2px;">
+                                     <p class="card-text">Figurines,vases & more
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="card" style="height: 138.2px;background-color:bl;">
+                                <a href="#" style="text-decoration: none;color: black; font-size: 12px;" >
+                                    <img class="card-img-top" src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/New/1x/final/186x116_Home_storage_1._SY116_CB555624324_.jpg" style="height: 102.2px;">
+                                     <p class="card-text">Home storage
+                                        </p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="card" style="height: 138.2px;background-color:bl;">
+                                <a href="#" style="text-decoration: none;color: black; font-size: 12px;" >
+                                    <img class="card-img-top" src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/New/1x/final/186x116_Home_lighting_2._SY116_CB555624324_.jpg" style="height: 102.2px;">
+                                     <p class="card-text">Lighting solution</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                 </div>
+                 <div class="card-footer">
+                    <a href="https://www.amazon.in/b/?_encoding=UTF8&node=12414705031&pd_rd_w=KEf6b&content-id=amzn1.sym.f8e82c51-0408-4554-a158-9be4d776850d&pf_rd_p=f8e82c51-0408-4554-a158-9be4d776850d&pf_rd_r=8PP6XVKYNSPFCE6SYZST&pd_rd_wg=V3wmJ&pd_rd_r=ef85d735-e6de-46b0-88c9-3620eff74ad0&ref_=pd_hp_d_atf_unk">Explore all</a>
+                 </div>
+               </div>
+           </div>
+
+           <!-- Repeat the above col-md-3 divs for additional cards -->
+           <div class="col-md-3">
+                <!-- ... Your next card ... -->
+                <div class="card" style="height:420px;background-color: #FFFF;">
+                <div class="card-header" style="height: 54.1px; background-color: #FFFF;"><h5 style="font-size: 18px; font-weight: bold;">Appliances for your home | Up to 55% off</h5></div>
+                <div class="card-content container-fluid">
+                   <div class="row">
+                       <div class="col-6">
+                           <div class="card" style="height: 138.2px;background-color:bl;">
+                               <a href="#" style="text-decoration: none;color: black; font-size: 12px;" >
+                                   <img class="card-img-top" src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/GATEWAY/MSO/Appliances-QC-PC-186x116--B08RDL6H79._SY116_CB667322346_.jpg" style="height: 102.2px;">
+                                    <p class="card-text">Air conditioners</p>
+                               </a>
+                           </div>
+                       </div>
+                       <div class="col-6">
+                           <div class="card" style="height: 138.2px;background-color:bl;">
+                               <a href="#" style="text-decoration: none;color: black; font-size: 12px;" >
+                                   <img class="card-img-top" src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/GATEWAY/MSO/Appliances-QC-PC-186x116--B08345R1ZW._SY116_CB667322346_.jpg" style="height: 102.2px;">
+                                    <p class="card-text">Refrigerators</p>
+                               </a>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="row">
+                       <div class="col-6">
+                           <div class="card" style="height: 138.2px;background-color:bl;">
+                               <a href="#" style="text-decoration: none;color: black; font-size: 12px;" >
+                                   <img class="card-img-top" src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/GATEWAY/MSO/Appliances-QC-PC-186x116--B07G5J5FYP._SY116_CB667322346_.jpg" style="height: 102.2px;">
+                                    <p class="card-text">Microwaves</p>
+                               </a>
+                           </div>
+                       </div>
+                       <div class="col-6">
+                           <div class="card" style="height: 138.2px;background-color:bl;">
+                               <a href="#" style="text-decoration: none;color: black; font-size: 12px;" >
+                                   <img class="card-img-top" src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/GATEWAY/MSO/186x116---wm._SY116_CB667322346_.jpg" style="height: 102.2px;">
+                                    <p class="card-text">Washing machines</p>
+                               </a>
+                           </div>
+                       </div>
+                   </div>
+                </div>
+                <div class="card-footer">
+                   <a href="https://www.amazon.in/s?bbn=84514735031&rh=n%3A84514735031%2Cp_85%3A10440599031&_encoding=UTF8&content-id=amzn1.sym.58c90a12-100b-4a2f-8e15-7c06f1abe2be&pd_rd_r=ef85d735-e6de-46b0-88c9-3620eff74ad0&pd_rd_w=LCBhi&pd_rd_wg=V3wmJ&pf_rd_p=58c90a12-100b-4a2f-8e15-7c06f1abe2be&pf_rd_r=8PP6XVKYNSPFCE6SYZST&ref=pd_hp_d_atf_unk">See more</a>
+                </div>
+              </div>
+           </div>
+           <div class="col-md-3">
+                <!-- ... Your next card ... -->
+               <div class="card" style="height:420px;background-color: #FFFF;">
+                <div class="card-header" style="height: 54.1px; background-color: #FFFF;"><h5 style="font-size: 20px; font-weight: bold;">Starting ₹149 | Headphones</h5></div>
+                <div class="card-content container-fluid">
+                   <div class="row">
+                       <div class="col-6">
+                           <div class="card" style="height: 138.2px;background-color:bl;">
+                               <a href="#" style="text-decoration: none;color: black; font-size: 12px;" >
+                                   <img class="card-img-top" src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/june/CE/GW/QC/PC/PC_QuadCard_boAt_0.5x._SY116_CB553870684_.jpg" style="height: 102.2px;">
+                                    <p class="card-text">
+                                        Starting ₹249 | boAt</p>
+                               </a>
+                           </div>
+                       </div>
+                       <div class="col-6">
+                           <div class="card" style="height: 138.2px;background-color:bl;">
+                               <a href="#" style="text-decoration: none;color: black; font-size: 12px;" >
+                                   <img class="card-img-top" src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/june/CE/GW/QC/PC/PC_QuadCard_Boult_0.5x._SY116_CB553870684_.jpg" style="height: 102.2px;">
+                                    <p class="card-text">Starting ₹349 | boult</p>
+                               </a>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="row">
+                       <div class="col-6">
+                           <div class="card" style="height: 138.2px;background-color:bl;">
+                               <a href="#" style="text-decoration: none;color: black; font-size: 12px;" >
+                                   <img class="card-img-top" src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/june/CE/GW/QC/PC/PC_QuadCard_Noise_0.5x._SY116_CB553870684_.jpg" style="height: 102.2px;">
+                                    <p class="card-text">Starting ₹649 | Noise</p>
+                               </a>
+                           </div>
+                       </div>
+                       <div class="col-6">
+                           <div class="card" style="height: 138.2px;background-color:bl;">
+                               <a href="#" style="text-decoration: none;color: black; font-size: 12px;" >
+                                   <img class="card-img-top" src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/june/CE/MSO/PD3/PC_QuadCard_Zeb_0.5x_1._SY116_CB570220221_.jpg" style="height: 102.2px;">
+                                    <p class="card-text">Starting ₹149 | Zebronics</p>
+                               </a>
+                           </div>
+                       </div>
+                   </div>
+                </div>
+                <div class="card-footer">
+                   <a href="https://www.amazon.in/b/?_encoding=UTF8&ie=UTF8&node=1388921031&pd_rd_w=XpjOI&content-id=amzn1.sym.82b20790-8877-4d70-8f73-9d8246e460aa&pf_rd_p=82b20790-8877-4d70-8f73-9d8246e460aa&pf_rd_r=8PP6XVKYNSPFCE6SYZST&pd_rd_wg=V3wmJ&pd_rd_r=ef85d735-e6de-46b0-88c9-3620eff74ad0&ref_=pd_hp_d_atf_unk">See all offers</a>
+                </div>
+              </div>
+           </div>
+           <div class="col-md-3">
+                <!-- ... Your next card ... -->
+                <div class="card" style="height:420px;background-color: #FFFF;">
+                <div class="card-header" style="height: 54.1px; background-color: #FFFF;"><h5 style="font-size: 18px; font-weight: bold;">Automotive essentials | Up to 60% off</h5></div>
+                <div class="card-content container-fluid">
+                   <div class="row">
+                       <div class="col-6">
+                           <div class="card" style="height: 138.2px;background-color:bl;">
+                               <a href="#" style="text-decoration: none;color: black; font-size: 12px;" >
+                                   <img class="card-img-top" src="https://images-eu.ssl-images-amazon.com/images/G/31/img17/Auto/2020/GW/PCQC/Glasscare1X._SY116_CB410830553_.jpg" style="height: 102.2px;">
+                                    <p class="card-text">Cleaning accesories</p>
+                               </a>
+                           </div>
+                       </div>
+                       <div class="col-6">
+                           <div class="card" style="height: 138.2px;background-color:bl;">
+                               <a href="#" style="text-decoration: none;color: black; font-size: 12px;" >
+                                   <img class="card-img-top" src="https://images-eu.ssl-images-amazon.com/images/G/31/img17/Auto/2020/GW/PCQC/Rim_tyrecare1x._SY116_CB410830552_.jpg" style="height: 102.2px;">
+                                    <p class="card-text">Tyre & rim care</p>
+                               </a>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="row">
+                       <div class="col-6">
+                           <div class="card" style="height: 138.2px;background-color:bl;">
+                               <a href="#" style="text-decoration: none;color: black; font-size: 12px;" >
+                                   <img class="card-img-top" src="https://images-eu.ssl-images-amazon.com/images/G/31/img17/Auto/2020/GW/PCQC/Vega_helmet_186x116._SY116_CB405090404_.jpg" style="height: 102.2px;">
+                                    <p class="card-text">Helmets</p>
+                               </a>
+                           </div>
+                       </div>
+                       <div class="col-6">
+                           <div class="card" style="height: 138.2px;background-color:bl;">
+                               <a href="#" style="text-decoration: none;color: black; font-size: 12px;" >
+                                   <img class="card-img-top" src="https://images-eu.ssl-images-amazon.com/images/G/31/img17/Auto/2020/GW/PCQC/Vaccum1x._SY116_CB410830552_.jpg" style="height: 102.2px;">
+                                    <p class="card-text">Vaccum cleaner</p>
+                               </a>
+                           </div>
+                       </div>
+                   </div>
+                </div>
+                <div class="card-footer">
+                   <a href="https://www.amazon.in/b/?_encoding=UTF8&ie=UTF8&node=4772060031&pd_rd_w=ZSkJf&content-id=amzn1.sym.9ff36f11-82d6-4600-a8fb-e52bb32e171c&pf_rd_p=9ff36f11-82d6-4600-a8fb-e52bb32e171c&pf_rd_r=6XRFHPMX0FBR7N0MPT3H&pd_rd_wg=PLxmK&pd_rd_r=ebbac395-feb8-4540-a12f-70ca9eb5cc13&ref_=pd_hp_d_atf_unk">See more</a>
+                </div>
+              </div>
+           </div>
+
+        </div>
+    </div>
+         </div>  
+ </section>
+
+            <!-- DISPLAY OF PRODUCTS IN SLIDER -->
+
+          <section>
+            <div class="container-fluid" style="background-color: #FFFF; width: 1500px; height: 285px;">
+                <div class="header"><h5 style="font-weight: bold;font-size: 22px;">Up to 50% off | Unique products from stores near you <small><a href="">See all offers</a></small></h5> </div>
+                <div id="demo" class="carousel slide" data-ride="carousel">
+                    <ul class="carousel-indicators">
+                      <li data-target="#demo" data-slide-to="0" class="active"></li>
+                      <li data-target="#demo" data-slide-to="1"></li>
+                      <li data-target="#demo" data-slide-to="2"></li>
+                    </ul>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active row">
+                            
+                            <div class="row">
+                                <div class="col-2">
+                                    <div class="card">
+                                        <img src="https://m.media-amazon.com/images/I/61TQfKLDBrL._AC_SY200_.jpg" alt="" class="card-img" width="200px" height="200px">
+                                    </div>
+                                    </div>
+                                    <div class="col-2">
+                                       <div class="card ">
+                                          <img src="https://m.media-amazon.com/images/I/71S81vgMTFL._AC_SY200_.jpg" alt="Los Angeles" width="200px" height="200px" class="card-img">
+                                         </div>
+                                    </div>
+                                    <div class="col-2">
+                                       <div class="card ">
+                                          <img src="https://m.media-amazon.com/images/I/51iuygsyjFL._AC_SY200_.jpg" alt="Los Angeles" width="270px" height="171.96px" class="card-img">
+                                         </div>
+                                    </div>
+                                    <div class="col-2">
+                                       <div class="card ">
+                                          <img src="https://m.media-amazon.com/images/I/71bn8jpAURL._AC_SY200_.jpg" alt="Los Angeles" width="201px" height="200px" class="card-img">
+                                         </div>
+                                    </div>
+                                    <div class="col-2">
+                                       <div class="card "> 
+                                          <img src="https://m.media-amazon.com/images/I/81uA15XIX7L._AC_SY200_.jpg" alt="Los Angeles" width="201px" height="200px" class="card-img">
+                                          </div> 
+                                    </div>
+                                    <div class="col-2 ">
+                                   <div class="card">
+                                   <img src="https://m.media-amazon.com/images/I/71ogjLKtg9L._AC_SY200_.jpg" alt="Los Angeles" width="201px" height="200px">
+                                   </div>
+                                </div>
+                             </div>
+                       </div>
+            
+                        <!-- second slide -->
+            
+                        <div class="carousel-item row ">
+                            
+                            <div class="row">
+                                <div class="col-2">
+                                    <div class="card">
+                                        <img src="https://m.media-amazon.com/images/I/61vq6VmyfDL._AC_SY200_.jpg" alt="" class="card-img" width="200px" height="200px">
+                                    </div>
+                                    </div>
+                                    <div class="col-2">
+                                       <div class="card ">
+                                          <img src="https://m.media-amazon.com/images/I/61YkrH3CynL._AC_SY200_.jpg" alt="Los Angeles" width="200px" height="200px" class="card-img">
+                                         </div>
+                                    </div>
+                                    <div class="col-2">
+                                       <div class="card ">
+                                          <img src="https://m.media-amazon.com/images/I/91XvPhcEBUL._AC_SY200_.jpg" alt="Los Angeles" width="270px" height="171.96px" class="card-img">
+                                         </div>
+                                    </div>
+                                    <div class="col-2">
+                                       <div class="card ">
+                                          <img src="https://m.media-amazon.com/images/I/71gcmMXa+VL._AC_SY200_.jpg" alt="Los Angeles" width="201px" height="200px" class="card-img">
+                                         </div>
+                                    </div>
+                                    <div class="col-2">
+                                       <div class="card "> 
+                                          <img src="https://m.media-amazon.com/images/I/81HQdeevtAL._AC_SY200_.jpg" alt="Los Angeles" width="201px" height="200px" class="card-img">
+                                          </div> 
+                                    </div>
+                                    <div class="col-2">
+                                       <div class="card">
+                                         <img src="https://m.media-amazon.com/images/I/91dj7SI-erL._AC_SY200_.jpg" alt="Los Angeles" width="201px" height="200px">
+                                       </div>
+                                    </div>
+                                </div>
+                             </div>
+        
+            
+                    <!-- third slide -->
+            
+                    <div class="carousel-item row ">
+                            
+                        <div class="row">
+                            <div class="col-2">
+                                <div class="card">
+                                    <img src="https://m.media-amazon.com/images/I/91jIvgcY-cS._AC_SY200_.jpg" alt="" class="card-img" width="200px" height="200px">
+                                </div>
+                             </div>
+                             <div class="col-2">
+                                <div class="card ">
+                                   <img src="https://m.media-amazon.com/images/I/71UQ1QHWdrL._AC_SY200_.jpg" alt="Los Angeles" width="200px" height="200px" class="card-img">
+                                  </div>
+                             </div>
+                             <div class="col-2">
+                                <div class="card ">
+                                   <img src="https://m.media-amazon.com/images/I/51iuygsyjFL._AC_SY200_.jpg" alt="Los Angeles" width="270px" height="171.96px" class="card-img">
+                                  </div>
+                             </div>
+                             <div class="col-2">
+                                <div class="card ">
+                                   <img src="https://m.media-amazon.com/images/I/612QHteoZ2S._AC_SY200_.jpg" alt="Los Angeles" width="201px" height="200px" class="card-img">
+                                  </div>
+                             </div>
+                             <div class="col-2">
+                                <div class="card "> 
+                                   <img src="https://m.media-amazon.com/images/I/51-rHMhfvIL._AC_SY200_.jpg" alt="Los Angeles" width="201px" height="200px" class="card-img">
+                                   </div> 
+                             </div>
+                             <div class="col-2">
+                               <div class="card">
+                                <img src="https://m.media-amazon.com/images/I/41CcI9u8YhL._AC_SY200_.jpg" alt="Los Angeles" width="201px" height="200px">
+                               </div>
+                             </div>
+                          </div>
+                    </div>
+                    
+            
+                             <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                                 <span style="background-color: black;" class="carousel-control-prev-icon"></span>
+                               </a>
+                               <a class="carousel-control-next" href="#demo" data-slide="next">
+                                 <span style="background-color: black;" class="carousel-control-next-icon"></span>
+                                </a>
+                  </div>
+        
+              </div>
+
+          </section>
+
+          <!--DISPLAY OF PRODUCT IN CARD FORMAT-TWO -->
+
+     <div class="container-fluid">
+        <div class="row">
+           <div class="col-md-3">
+               <div class="card" style="height:420px;background-color: #FFFF;">
+                 <div class="card-header" style="height: 54.1px; background-color: #FFFF;"><h5 style="font-size: 20px; font-weight: bold;">Riches forged through innovation.</h5></div>
+                 <div class="card-content container-fluid">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="card" style="height: 138.2px;background-color:bl;">
+                                <a href="#" style="text-decoration: none;color: black; font-size: 12px;" >
+                                    <img class="card-img-top" src="https://images-eu.ssl-images-amazon.com/images/G/31/ALP/RDAY/PC_Tile1_1x._SY116_CB551619714_.jpg" style="height: 102.2px;">
+                                     <p class="card-text">Home essentials</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="card" style="height: 138.2px;background-color:bl;">
+                                <a href="#" style="text-decoration: none;color: black; font-size: 12px;" >
+                                    <img class="card-img-top" src="https://images-eu.ssl-images-amazon.com/images/G/31/ALP/RDAY/PC_Tile2_1x._SY116_CB551619714_.jpg" style="height: 102.2px;">
+                                     <p class="card-text">Skin & body care</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="card" style="height: 138.2px;background-color:bl;">
+                                <a href="#" style="text-decoration: none;color: black; font-size: 12px;" >
+                                    <img class="card-img-top" src="https://images-eu.ssl-images-amazon.com/images/G/31/ALP/RDAY/PC_Tile3_1x._SY116_CB551619714_.jpg" style="height: 102.2px;">
+                                     <p class="card-text">Dry fruits & seeds</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="card" style="height: 138.2px;background-color:bl;">
+                                <a href="#" style="text-decoration: none;color: black; font-size: 12px;" >
+                                    <img class="card-img-top" src="https://images-eu.ssl-images-amazon.com/images/G/31/ALP/RDAY/Launchpad_Logo_1x._SY116_CB551619714_.jpg" style="height: 102.2px;">
+                                     <p class="card-text">Visit the store</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                 </div>
+                 <div class="card-footer">
+                    <a href="#">Explore all</a>
+                 </div>
+               </div>
+           </div>
+
+           <!-- Repeat the above col-md-3 divs for additional cards -->
+           <div class="col-md-3">
+                <!-- ... Your next card ... -->
+                <div class="card" style="height:420px;background-color: #FFFF;">
+                <div class="card-header" style="height: 54.1px; background-color: #FFFF;"><h5 style="font-size: 18px; font-weight: bold;">Jewels from Bharat’s bustling local stores</h5></div>
+                <div class="card-content container-fluid">
+                   <div class="row">
+                       <div class="col-6">
+                           <div class="card" style="height: 138.2px;background-color:bl;">
+                               <a href="#" style="text-decoration: none;color: black; font-size: 12px;" >
+                                   <img class="card-img-top" src="https://images-eu.ssl-images-amazon.com/images/G/31/Local/New/RepublicD/QCPC/QC--186-x-116--1X-EV._SY116_CB551648147_.jpg" style="height: 102.2px;">
+                                    <p class="card-text">Electric vehicles</p>
+                               </a>
+                           </div>
+                       </div>
+                       <div class="col-6">
+                           <div class="card" style="height: 138.2px;background-color:bl;">
+                               <a href="#" style="text-decoration: none;color: black; font-size: 12px;" >
+                                   <img class="card-img-top" src="https://images-eu.ssl-images-amazon.com/images/G/31/Local/New/RepublicD/QCPC/Desktop-Quad-186-x-116--decor-1x._SY116_CB551647351_.jpg" style="height: 102.2px;">
+                                    <p class="card-text">Home decor</p>
+                               </a>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="row">
+                       <div class="col-6">
+                           <div class="card" style="height: 138.2px;background-color:bl;">
+                               <a href="#" style="text-decoration: none;color: black; font-size: 12px;" >
+                                   <img class="card-img-top" src="https://images-eu.ssl-images-amazon.com/images/G/31/Local/New/RepublicD/QCPC/FURNITURE--186-x-116--1x._SY116_CB551647351_.jpg" style="height: 102.2px;">
+                                    <p class="card-text">Recliners</p>
+                               </a>
+                           </div>
+                       </div>
+                       <div class="col-6">
+                           <div class="card" style="height: 138.2px;background-color:bl;">
+                               <a href="#" style="text-decoration: none;color: black; font-size: 12px;" >
+                                   <img class="card-img-top" src="https://images-eu.ssl-images-amazon.com/images/G/31/ALP/RDAY/LS_1x._SY116_CB551618203_.jpg" style="height: 102.2px;">
+                                    <p class="card-text">Visit the store</p>
+                               </a>
+                           </div>
+                       </div>
+                   </div>
+                </div>
+                <div class="card-footer">
+                   <a href="#">Explore all</a>
+                </div>
+              </div>
+           </div>
+           <div class="col-md-3">
+                <!-- ... Your next card ... -->
+               <div class="card" style="height:420px;background-color: #FFFF;">
+                <div class="card-header" style="height: 54.1px; background-color: #FFFF;"><h5 style="font-size: 18px; font-weight: bold;">New businesses creating new fortunes</h5></div>
+                <div class="card-content container-fluid">
+                   <div class="row">
+                       <div class="col-6">
+                           <div class="card" style="height: 138.2px;background-color:bl;">
+                               <a href="#" style="text-decoration: none;color: black; font-size: 12px;" >
+                                   <img class="card-img-top" src="https://images-eu.ssl-images-amazon.com/images/G/31/12407722031/Rday25/DESKTOP-QC-1xHome._SY116_CB551616970_.jpg" style="height: 102.2px;">
+                                    <p class="card-text">Home decor</p>
+                               </a>
+                           </div>
+                       </div>
+                       <div class="col-6">
+                           <div class="card" style="height: 138.2px;background-color:bl;">
+                               <a href="#" style="text-decoration: none;color: black; font-size: 12px;" >
+                                   <img class="card-img-top" src="https://images-eu.ssl-images-amazon.com/images/G/31/12407722031/Rday25/DESKTOP-QC-1xFurniture._SY116_CB551616970_.jpg" style="height: 102.2px;">
+                                    <p class="card-text">Furnitures</p>
+                               </a>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="row">
+                       <div class="col-6">
+                           <div class="card" style="height: 138.2px;background-color:bl;">
+                               <a href="#" style="text-decoration: none;color: black; font-size: 12px;" >
+                                   <img class="card-img-top" src="https://images-eu.ssl-images-amazon.com/images/G/31/12407722031/Rday25/DESKTOP-QC-1xstorage._SY116_CB551616970_.jpg" style="height: 102.2px;">
+                                    <p class="card-text">Storage essentials</p>
+                               </a>
+                           </div>
+                       </div>
+                       <div class="col-6">
+                           <div class="card" style="height: 138.2px;background-color:bl;">
+                               <a href="#" style="text-decoration: none;color: black; font-size: 12px;" >
+                                   <img class="card-img-top" src="https://images-eu.ssl-images-amazon.com/images/G/31/12407722031/Rday25/EmergingSellers_1x._SY116_CB551616973_.jpg" style="height: 102.2px;">
+                                    <p class="card-text">Visit the store</p>
+                               </a>
+                           </div>
+                       </div>
+                   </div>
+                </div>
+                <div class="card-footer">
+                   <a href="#">Explore all</a>
+                </div>
+              </div>
+           </div>
+           <div class="col-md-3">
+                <!-- ... Your next card ... -->
+                <div class="card" style="height:420px;background-color: #FFFF;">
+                <div class="card-header" style="height: 54.1px; background-color: #FFFF;"><h5 style="font-size: 20px; font-weight: bold;">Priceless ventures led by women</h5></div>
+                <div class="card-content container-fluid">
+                   <div class="row">
+                       <div class="col-6">
+                           <div class="card" style="height: 138.2px;background-color:bl;">
+                               <a href="#" style="text-decoration: none;color: black; font-size: 12px;" >
+                                   <img class="card-img-top" src="https://images-eu.ssl-images-amazon.com/images/G/31/karigar/karigarsaheli_25/Desktop-Quad-cards-Satpurush_new1x._SY116_CB551636673_.jpg" style="height: 102.2px;">
+                                    <p class="card-text">Satpurush</p>
+                               </a>
+                           </div>
+                       </div>
+                       <div class="col-6">
+                           <div class="card" style="height: 138.2px;background-color:bl;">
+                               <a href="#" style="text-decoration: none;color: black; font-size: 12px;" >
+                                   <img class="card-img-top" src="https://images-eu.ssl-images-amazon.com/images/G/31/karigar/karigarsaheli_25/Desktop-Quad-cards-bare_new-186-x-116-1x._SY116_CB551635244_.jpg" style="height: 102.2px;">
+                                    <p class="card-text">Bare Necessities</p>
+                               </a>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="row">
+                       <div class="col-6">
+                           <div class="card" style="height: 138.2px;background-color:bl;">
+                               <a href="#" style="text-decoration: none;color: black; font-size: 12px;" >
+                                   <img class="card-img-top" src="https://images-eu.ssl-images-amazon.com/images/G/31/karigar/karigarsaheli_25/Desktop-Quad-cards-lore_new-186-x-116-1x._SY116_CB551635427_.jpg" style="height: 102.2px;">
+                                    <p class="card-text">East Lore</p>
+                               </a>
+                           </div>
+                       </div>
+                       <div class="col-6">
+                           <div class="card" style="height: 138.2px;background-color:bl;">
+                               <a href="#" style="text-decoration: none;color: black; font-size: 12px;" >
+                                   <img class="card-img-top" src="https://images-eu.ssl-images-amazon.com/images/G/31/ALP/RDAY/Saheli_1x._SY116_CB551618203_.jpg" style="height: 102.2px;">
+                                    <p class="card-text">Visit the store</p>
+                               </a>
+                           </div>
+                       </div>
+                   </div>
+                </div>
+                <div class="card-footer">
+                   <a href="#">Explore all</a>
+                </div>
+              </div>
+           </div>
+
+        </div>
+    </div>
+
+    <!-- GROCERIES SLIDER -->
+      <section>
+        <div class="container-fluid" style="background-color:#FFFF; width: 1500px; height: 285px;">
+            <div class="header"><h5 style="font-weight: bold;font-size: 22px;">Starting ₹139 | Bestselling products in grocery from emerging brands <small><a href="">See all </a></small></h5> </div>
+            <div id="demmo" class="carousel slide" data-ride="carousel">
+                <ul class="carousel-indicators">
+                  <li data-target="#demmo" data-slide-to="0" class="active"></li>
+                  <li data-target="#demmo" data-slide-to="1"></li>
+                  <li data-target="#demmo" data-slide-to="2"></li>
+                </ul>
+                <div class="carousel-inner row">
+                    <div class="carousel-item active row">
+                        
+                        <div class="row">
+                            <div class="col-2" >
+                                <div class="card">
+                                    <img src="https://m.media-amazon.com/images/I/81WIMnK9V1L._AC_SY200_.jpg" alt="" class="card-img" width="200px" height="200px">
+                                </div>
+                                </div>
+                                <div class="col-2" >
+                                   <div class="card "style="border: 0;">
+                                      <img src="https://m.media-amazon.com/images/I/7158dhb6jmL._AC_SY200_.jpg" alt="Los Angeles" width="200px" height="200px" class="card-img">
+                                     </div>
+                                </div>
+                                <div class="col-2">
+                                   <div class="card ">
+                                      <img src="https://m.media-amazon.com/images/I/81olIW382LL._AC_SY200_.jpg" alt="Los Angeles" width="270px" height="171.96px" class="card-img">
+                                     </div>
+                                </div>
+                                <div class="col-2">
+                                   <div class="card ">
+                                      <img src="https://m.media-amazon.com/images/I/814zE+zRSZL._AC_SY200_.jpg" alt="Los Angeles" width="201px" height="200px" class="card-img">
+                                     </div>
+                                </div>
+                                <div class="col-2">
+                                   <div class="card "> 
+                                      <img src="https://m.media-amazon.com/images/I/51QrhLUpwEL._AC_SY200_.jpg" alt="Los Angeles" width="201px" height="200px" class="card-img">
+                                      </div> 
+                                </div>
+                                <div class="col-2 ">
+                               <div class="card">
+                               <img src="https://m.media-amazon.com/images/I/61cgZecy9fL._AC_SY200_.jpg" alt="Los Angeles" width="201px" height="200px">
+                               </div>
+                            </div>
+                         </div>
+                   </div>
+        
+                    <!-- second slide -->
+        
+                    <div class="carousel-item row ">
+                        
+                        <div class="row">
+                            <div class="col-2">
+                                <div class="card">
+                                    <img src="https://m.media-amazon.com/images/I/71l+y9ATGKL._AC_SY200_.jpg" alt="" class="card-img" width="200px" height="200px">
+                                </div>
+                                </div>
+                                <div class="col-2">
+                                   <div class="card ">
+                                      <img src="https://m.media-amazon.com/images/I/71UB+oI6EvL._AC_SY200_.jpg" alt="Los Angeles" width="200px" height="200px" class="card-img">
+                                     </div>
+                                </div>
+                                <div class="col-2">
+                                   <div class="card ">
+                                      <img src="https://m.media-amazon.com/images/I/71QlWdzOBwL._AC_SY200_.jpg" alt="Los Angeles" width="270px" height="171.96px" class="card-img">
+                                     </div>
+                                </div>
+                                <div class="col-2">
+                                   <div class="card ">
+                                      <img src="https://m.media-amazon.com/images/I/61rHeJgnF7L._AC_SY200_.jpg" alt="Los Angeles" width="201px" height="200px" class="card-img">
+                                     </div>
+                                </div>
+                                <div class="col-2">
+                                   <div class="card "> 
+                                      <img src="https://m.media-amazon.com/images/I/61wADJbYvXL._AC_SY200_.jpg" alt="Los Angeles" width="201px" height="200px" class="card-img">
+                                      </div> 
+                                </div>
+                                <div class="col-2">
+                                   <div class="card">
+                                     <img src="https://m.media-amazon.com/images/I/81WCpyaNbJL._AC_SY200_.jpg" alt="Los Angeles" width="201px" height="200px">
+                                   </div>
+                                </div>
+                            </div>
+                         </div>
+    
+        
+                <!-- third slide -->
+        
+                <div class="carousel-item row ">
+                        
+                    <div class="row">
+                        <div class="col-2">
+                            <div class="card">
+                                <img src="https://m.media-amazon.com/images/I/71QlWdzOBwL._AC_SY200_.jpg" alt="" class="card-img" width="200px" height="200px">
+                            </div>
+                         </div>
+                         <div class="col-2">
+                            <div class="card ">
+                               <img src="https://m.media-amazon.com/images/I/81vf8mNL+-L._AC_SY200_.jpg" alt="Los Angeles" width="200px" height="200px" class="card-img">
+                              </div>
+                         </div>
+                         <div class="col-2">
+                            <div class="card ">
+                               <img src="https://m.media-amazon.com/images/I/81sqL9vxt6L._AC_SY200_.jpg" alt="Los Angeles" width="270px" height="171.96px" class="card-img">
+                              </div>
+                         </div>
+                         <div class="col-2">
+                            <div class="card ">
+                               <img src="https://m.media-amazon.com/images/I/71MSv-ZxZYL._AC_SY200_.jpg" alt="Los Angeles" width="201px" height="200px" class="card-img">
+                              </div>
+                         </div>
+                         <div class="col-2">
+                            <div class="card "> 
+                               <img src="https://m.media-amazon.com/images/I/6143LbeiCHL._AC_SY200_.jpg" alt="Los Angeles" width="201px" height="200px" class="card-img">
+                               </div> 
+                         </div>
+                         <div class="col-2">
+                           <div class="card">
+                            <img src="https://m.media-amazon.com/images/I/71J1pqCYQzL._AC_SY200_.jpg" alt="Los Angeles" width="201px" height="200px">
+                           </div>
+                         </div>
+                      </div>
+                </div>
+                
+        
+                         <a class="carousel-control-prev" href="#demmo" data-slide="prev">
+                             <span style="background-color: black;" class="carousel-control-prev-icon"></span>
+                           </a>
+                           <a class="carousel-control-next" href="#demmo" data-slide="next">
+                             <span style="background-color: black;" class="carousel-control-next-icon"></span>
+                            </a>
+              </div>
+    
+          </div>
+       
+      </section>
+
+      <!-- Products detail with price -->
+       <section>
+        <div class="container-fluid" style=" width: 1500px; height: 280pxpx;">
+            <div class="header" style="background-color: white;"><h5>No cost EMI up to 24 months | Starting ₹4,433 INR/month* <small><a href="">See all offers</a></small></h5> </div>
+            <div id="demo" class="carousel slide" data-ride="carousel">
+                <ul class="carousel-indicators">
+                  <li data-target="#deemo" data-slide-to="0" class="active"></li>
+                  <li data-target="#deemo" data-slide-to="1"></li>
+                  <li data-target="#deemo" data-slide-to="2"></li>
+                </ul>
+                <div class="carousel-inner">
+                    <div class="carousel-item active row">
+                        
+                        <div class="row">
+                            <div class="col-2">
+                                <div class="card" id="product-card">
+                                    <img src="https://m.media-amazon.com/images/I/8113d8pzQFL._SX240_QL100_AC_SCLZZZZZZZ_.jpg" alt=" hjghfgdffzsd" width="166.4px" height="150px"  class="Card image">
+                                    <div class="card-body" id="product-body">
+                                       
+                                        <p class="card-text" id="card-detail"> John Doe is an architect and engineer <br><span class="badge" style="">70%</span> <small style="color: crimson;font-size: 10px;font-weight:bold;">Limited*</small></p>
+                                        <div><strong style="font-size: 18px;">234</strong> <strike>445</strike></div>
+                                       
+                                      </div>
+                                </div>
+                             </div>
+                             <div class="col-2">
+                                <div class="card " id="product-card">
+                                   <img src="https://m.media-amazon.com/images/I/81DAOvGKnhL._SX240_QL100_AC_SCLZZZZZZZ_.jpg" alt="Los Angeles"  width="146.4px" height="130px" class="Card image">
+                                   <div class="card-body" id="product-body">
+                                       
+                                    <p class="card-text" id="card-detail"> John Doe is an architect and engineer <br><span class="badge">70%</span> <small style="color: crimson;font-size: 10px;font-weight:bold;">Limited*</small></p>
+                                    <div><strong style="font-size: 18px;">234</strong> <strike>445</strike></div>
+                                   
+                                  </div>
+                                  </div>
+                             </div>
+                             <div class="col-2">
+                                <div class="card" id="product-card">
+                                   <img src="https://m.media-amazon.com/images/I/71CqacIzyFL._SX240_QL100_AC_SCLZZZZZZZ_.jpg" alt="Los Angeles"  width="146.4px" height="130px" class="Card image">
+                                   <div class="card-body" id="product-body">
+                                       
+                                    <p class="card-text" id="card-detail"> John Doe is an architect and engineer <br><span class="badge">70%</span> <small style="color: crimson;font-size: 10px;font-weight:bold;">Limited*</small></p>
+                                    <div><strong style="font-size: 18px;">234</strong> <strike>445</strike></div>
+                                   
+                                  </div>
+                                  </div>
+                             </div>
+                             <div class="col-2">
+                                <div class="card "id="product-card">
+                                   <img src="https://m.media-amazon.com/images/I/71S9dg5+wbL._SX240_QL100_AC_SCLZZZZZZZ_.jpg" alt="Los Angeles"  width="146.4px" height="130px" class="Card image">
+                                   <div class="card-body" id="product-body">
+                                       
+                                    <p class="card-text" id="card-detail"> John Doe is an architect and engineer <br><span class="badge">70%</span> <small style="color: crimson;font-size: 10px;font-weight:bold;">Limited*</small></p>
+                                    <div><strong style="font-size: 18px;">234</strong> <strike>445</strike></div>
+                                   
+                                  </div>
+                                  </div>
+                             </div>
+                             <div class="col-2">
+                                <div class="card "id="product-card"> 
+                                   <img src="https://m.media-amazon.com/images/I/71fa0Niq9VL._SX240_QL100_AC_SCLZZZZZZZ_.jpg" alt="Los Angeles"  width="146.4px" height="130px" class="Card image">
+                                   <div class="card-body" id="product-body">
+                                       
+                                    <p class="card-text" id="card-detail"> John Doe is an architect and engineer <br><span class="badge">70%</span> <small style="color: crimson;font-size: 10px;font-weight:bold;">Limited*</small></p>
+                                    <div><strong style="font-size: 18px;">234</strong> <strike>445</strike></div>
+                                   
+                                  </div>
+                                   </div> 
+                             </div>
+                             <div class="col-2">
+                                <div class="card "id="product-card"> 
+                                   <img src="https://m.media-amazon.com/images/I/61EvLCxdXWL._AC_SY170_.jpg" alt="Los Angeles"width="146.4px" height="130px"class="Card image">
+                                   <div class="card-body" id="product-body">
+                                       
+                                    <p class="card-text" id="card-detail"> John Doe is an architect and engineer <br><span class="badge">70%</span> <small style="color: crimson;font-size: 10px;font-weight:bold;">Limited*</small></p>
+                                    <div><strong style="font-size: 18px;">234</strong> <strike>445</strike></div>
+                                   
+                                  </div>
+                                   </div> 
+                             </div>
+                            
+                         </div>
+                    </div>
+        
+                    <!-- second slide -->
+        
+                    <div class="carousel-item row ">
+                        
+                        <div class="row">
+                            <div class="col-2">
+                                <div class="card" id="product-card">
+                                    <img src="https://m.media-amazon.com/images/I/61rnjgTxjUL._AC_UY327_FMwebp_QL65_.jpg" alt=" hjghfgdffzsd" width="166.4px" height="150px"  class="Card image">
+                                    <div class="card-body" id="product-body">
+                                       
+                                        <p class="card-text" id="card-detail"> John Doe is an architect and engineer <br><span class="badge">70%</span> <small style="color: crimson;font-size: 10px;font-weight:bold;">Limited*</small></p>
+                                        <div><strong style="font-size: 18px;">234</strong> <strike>445</strike></div>
+                                       
+                                      </div>
+                                </div>
+                             </div>
+                             <div class="col-2">
+                                <div class="card " id="product-card">
+                                   <img src="https://m.media-amazon.com/images/I/81J6APjwxlL._AC_UY327_FMwebp_QL65_.jpg" alt="Los Angeles"  width="146.4px" height="130px" class="Card image">
+                                   <div class="card-body" id="product-body">
+                                       
+                                    <p class="card-text" id="card-detail"> John Doe is an architect and engineer <br><span class="badge">70%</span> <small style="color: crimson;font-size: 10px;font-weight:bold;">Limited*</small></p>
+                                    <div><strong style="font-size: 18px;">234</strong> <strike>445</strike></div>
+                                   
+                                  </div>
+                                  </div>
+                             </div>
+                             <div class="col-2">
+                                <div class="card" id="product-card">
+                                   <img src="https://m.media-amazon.com/images/I/91uns-1GnQL._AC_UL960_FMwebp_QL65_.jpg" alt="Los Angeles"  width="146.4px" height="130px" class="Card image">
+                                   <div class="card-body" id="product-body">
+                                       
+                                    <p class="card-text" id="card-detail"> John Doe is an architect and engineer <br><span class="badge">70%</span> <small style="color: crimson;font-size: 10px;font-weight:bold;">Limited*</small></p>
+                                    <div><strong style="font-size: 18px;">234</strong> <strike>445</strike></div>
+                                   
+                                  </div>
+                                  </div>
+                             </div>
+                             <div class="col-2">
+                                <div class="card "id="product-card">
+                                   <img src="https://m.media-amazon.com/images/I/718ThhLDibL._SX240_QL100_AC_SCLZZZZZZZ_.jpg" alt="Los Angeles"  width="146.4px" height="130px" class="Card image">
+                                   <div class="card-body" id="product-body">
+                                       
+                                    <p class="card-text" id="card-detail"> John Doe is an architect and engineer <br><span class="badge">70%</span> <small style="color: crimson;font-size: 10px;font-weight:bold;">Limited*</small></p>
+                                    <div><strong style="font-size: 18px;">234</strong> <strike>445</strike></div>
+                                   
+                                  </div>
+                                  </div>
+                             </div>
+                             <div class="col-2">
+                                <div class="card "id="product-card"> 
+                                   <img src="https://m.media-amazon.com/images/I/71fa0Niq9VL._SX240_QL100_AC_SCLZZZZZZZ_.jpg" alt="Los Angeles"  width="146.4px" height="130px" class="Card image">
+                                   <div class="card-body" id="product-body">
+                                       
+                                    <p class="card-text" id="card-detail"> John Doe is an architect and engineer <br><span class="badge">70%</span> <small style="color: crimson;font-size: 10px;font-weight:bold;">Limited*</small></p>
+                                    <div><strong style="font-size: 18px;">234</strong> <strike>445</strike></div>
+                                   
+                                  </div>
+                                   </div> 
+                             </div>
+                             <div class="col-2">
+                                <div class="card "id="product-card"> 
+                                   <img src="https://m.media-amazon.com/images/I/61EvLCxdXWL._AC_SY170_.jpg" alt="Los Angeles"width="146.4px" height="130px"class="Card image">
+                                   <div class="card-body" id="product-body">
+                                       
+                                    <p class="card-text" id="card-detail"> John Doe is an architect and engineer <br><span class="badge">70%</span> <small style="color: crimson;font-size: 10px;font-weight:bold;">Limited*</small></p>
+                                    <div><strong style="font-size: 18px;">234</strong> <strike>445</strike></div>
+                                   
+                                  </div>
+                                   </div> 
+                             </div>
+        
+                    </div>
+        
+        
+                </div>
+        
+                <!-- third slide -->
+        
+                <div class="carousel-item row">
+                        
+                    <div class="row">
+                        <div class="col-2">
+                            <div class="card" id="product-card">
+                                <img src="https://m.media-amazon.com/images/I/8113d8pzQFL._SX240_QL100_AC_SCLZZZZZZZ_.jpg" alt=" hjghfgdffzsd" width="166.4px" height="150px"  class="Card image">
+                                <div class="card-body" id="product-body">
+                                   
+                                    <p class="card-text" id="card-detail"> John Doe is an architect and engineer <br><span class="badge">70%</span> <small style="color: crimson;font-size: 10px;font-weight:bold;">Limited*</small></p>
+                                    <div><strong style="font-size: 18px;">234</strong> <strike>445</strike></div>
+                                   
+                                  </div>
+                            </div>
+                         </div>
+                         <div class="col-2">
+                            <div class="card " id="product-card">
+                               <img src="https://m.media-amazon.com/images/I/81DAOvGKnhL._SX240_QL100_AC_SCLZZZZZZZ_.jpg" alt="Los Angeles"  width="146.4px" height="130px" class="Card image">
+                               <div class="card-body" id="product-body">
+                                   
+                                <p class="card-text" id="card-detail"> John Doe is an architect and engineer <br><span class="badge">70%</span> <small style="color: crimson;font-size: 10px;font-weight:bold;">Limited*</small></p>
+                                <div><strong style="font-size: 18px;">234</strong> <strike>445</strike></div>
+                               
+                              </div>
+                              </div>
+                         </div>
+                         <div class="col-2">
+                            <div class="card" id="product-card">
+                               <img src="https://m.media-amazon.com/images/I/71CqacIzyFL._SX240_QL100_AC_SCLZZZZZZZ_.jpg" alt="Los Angeles"  width="146.4px" height="130px" class="Card image">
+                               <div class="card-body" id="product-body">
+                                   
+                                <p class="card-text" id="card-detail"> John Doe is an architect and engineer <br><span class="badge">70%</span> <small style="color: crimson;font-size: 10px;font-weight:bold;">Limited*</small></p>
+                                <div><strong style="font-size: 18px;">234</strong> <strike>445</strike></div>
+                               
+                              </div>
+                              </div>
+                         </div>
+                         <div class="col-2">
+                            <div class="card "id="product-card">
+                               <img src="https://m.media-amazon.com/images/I/71S9dg5+wbL._SX240_QL100_AC_SCLZZZZZZZ_.jpg" alt="Los Angeles"  width="146.4px" height="130px" class="Card image">
+                               <div class="card-body" id="product-body">
+                                   
+                                <p class="card-text" id="card-detail"> John Doe is an architect and engineer <br><span class="badge">70%</span> <small style="color: crimson;font-size: 10px;font-weight:bold;">Limited*</small></p>
+                                <div><strong style="font-size: 18px;">234</strong> <strike>445</strike></div>
+                               
+                              </div>
+                              </div>
+                         </div>
+                         <div class="col-2">
+                            <div class="card "id="product-card"> 
+                               <img src="https://m.media-amazon.com/images/I/71fa0Niq9VL._SX240_QL100_AC_SCLZZZZZZZ_.jpg" alt="Los Angeles"  width="146.4px" height="130px" class="Card image">
+                               <div class="card-body" id="product-body">
+                                   
+                                <p class="card-text" id="card-detail"> John Doe is an architect and engineer <br><span class="badge">70%</span> <small style="color: crimson;font-size: 10px;font-weight:bold;">Limited*</small></p>
+                                <div><strong style="font-size: 18px;">234</strong> <strike>445</strike></div>
+                               
+                              </div>
+                               </div> 
+                         </div>
+                         <div class="col-2">
+                            <div class="card "id="product-card"> 
+                               <img src="https://m.media-amazon.com/images/I/61EvLCxdXWL._AC_SY170_.jpg" alt="Los Angeles"width="146.4px" height="130px"class="Card image">
+                               <div class="card-body" id="product-body">
+                                   
+                                <p class="card-text" id="card-detail"> John Doe is an architect and engineer <br><span class="badge">70%</span> <small style="color: crimson;font-size: 10px;font-weight:bold;">Limited*</small></p>
+                                <div><strong style="font-size: 18px;">234</strong> <strike>445</strike></div>
+                               
+                              </div>
+                               </div> 
+                         </div>
+        
+                </div>
+                </div>
+        
+        
+                <a class="carousel-control-prev" href="#deemo" data-slide="prev">
+                    <span style="background-color: black;" class="carousel-control-prev-icon"></span>
+                  </a>
+                  <a class="carousel-control-next" href="#deemo" data-slide="next">
+                    <span style="background-color: black;" class="carousel-control-next-icon"></span>
+                 </a>
+                
+               </div>
+        
+           </div>
+       </section>
+
+    <!-- DISPLAY OF VEHICLE IN SLIDER FORMAT -->
+     <section>
+        <div class="container-fluid" style=" width: 1600px; height: 285px;  background-color: #FFFF;">
+            <div class="header" style="background-color: #FFFF;"><h5 style="font-weight: bold;font-size: 22px;">No cost EMI up to 24 months | Starting ₹4,433 INR/month* <small><a href="">See all offers</a></small></h5> </div>
+            <div id="demoo" class="carousel slide" data-ride="carousel">
+                <ul class="carousel-indicators">
+                  <li data-target="#demoo" data-slide-to="0" class="active"></li>
+                  <li data-target="#demoo" data-slide-to="1"></li>
+                  <li data-target="#demoo" data-slide-to="2"></li>
+                </ul>
+                <div class="carousel-inner">
+                    <div class="carousel-item active row">
+                        
+                        <div class="row">
+                            <div class="col-2.4">
+                                <div class="card" style="border: 0;">
+                                    <img src="https://m.media-amazon.com/images/I/51a0T2AQnJL._AC_SY200_.jpg" alt=" hjghfgdffzsd" width="270px" height="200px"  class="card-img">
+                                </div>
+                             </div>
+                             <div class="col-2.4">
+                                <div class="card " style="border: 0;">
+                                   <img src="https://m.media-amazon.com/images/I/71FaTv3lIML._AC_SY200_.jpg" alt="Los Angeles"  width="270px"  height="200px" class="card-img">
+                                  </div>
+                             </div>
+                             <div class="col-2.4">
+                                <div class="card "style="border: 0;">
+                                   <img src="https://m.media-amazon.com/images/I/71PGc7ijDjL._AC_SY200_.jpg" alt="Los Angeles"  width="270px"  height="200px" class="card-img">
+                                  </div>
+                             </div>
+                             <div class="col-2.4">
+                                <div class="card "style="border: 0;">
+                                   <img src="https://m.media-amazon.com/images/I/71ZiYOX1p4L._AC_SY200_.jpg" alt="Los Angeles"  width="270px"  height="200px" class="card-img">
+                                  </div>
+                             </div>
+                             <div class="col-2.4">
+                                <div class="card "style="border: 0;"> 
+                                   <img src="https://m.media-amazon.com/images/I/71yhYKW9gcL._AC_SY200_.jpg" alt="Los Angeles"  width="270px"  height="200px" class="card-img">
+                                   </div> 
+                             </div>
+                             
+                         </div>
+                    </div>
+        
+                    <!-- second slide -->
+        
+                    <div class="carousel-item row ">
+                        
+                        <div class="row">
+                            <div class="col-2.4">
+                                <div class="card"style="border: 0;">
+                                    <img src="https://m.media-amazon.com/images/I/817hIa9ORoL._AC_SY200_.jpg" alt=" hjghfgdffzsd" width="240px" height="190px"  class="card-img">
+                                </div>
+                             </div>
+                             <div class="col-2.4">
+                                <div class="card "style="border: 0;">
+                                   <img src="https://m.media-amazon.com/images/I/71sJ+cWHjdL._AC_SY200_.jpg" alt="Los Angeles"  width="240px" height="190px" class="card-img">
+                                  </div>
+                             </div>
+                             <div class="col-2.4">
+                                <div class="card "style="border: 0;">
+                                   <img src="https://m.media-amazon.com/images/I/71Y4tPF6wCL._AC_SY200_.jpg" alt="Los Angeles" width="240px" height="190px" class="card-img">
+                                  </div>
+                             </div>
+                             <div class="col-2.4">
+                                <div class="card "style="border: 0;">
+                                   <img src="https://m.media-amazon.com/images/I/410ARZ0es5L._AC_SY200_.jpg" alt="Los Angeles"  width="240px" height="190px" class="card-img">
+                                  </div>
+                             </div>
+                             <div class="col-2.4">
+                                <div class="card "style="border: 0;"> 
+                                   <img src="https://m.media-amazon.com/images/I/71Lq1aLkdKL._AC_SY200_.jpg" alt="Los Angeles" width="240px" height="190px" class="card-img">
+                                   </div> 
+                             </div>
+        
+                    </div>
+        
+        
+                </div>
+        
+                <!-- third slide -->
+        
+                <div class="carousel-item row">
+                        
+                    <div class="row">
+                        <div class="col-2.4">
+                            <div class="card"style="border: 0;">
+                                <img src="https://m.media-amazon.com/images/I/71c0VTbO5bL._AC_SY200_.jpg" alt=" hjghfgdffzsd" width="270px" height="200px"  class="card-img">
+                            </div>
+                         </div>
+                         <div class="col-2.4">
+                            <div class="card "style="border: 0;">
+                               <img src="https://m.media-amazon.com/images/I/71cmtvdbRhL._AC_SY200_.jpg" alt="Los Angeles"  width="270px"  height="200px" class="card-img">
+                              </div>
+                         </div>
+                         <div class="col-2.4">
+                            <div class="card "style="border: 0;">
+                               <img src="https://m.media-amazon.com/images/I/71FlAsMQOjL._AC_SY200_.jpg" alt="Los Angeles"  width="270px"  height="200px" class="card-img">
+                              </div>
+                         </div>
+                         <div class="col-2.4">
+                            <div class="card "style="border: 0;">
+                               <img src="https://m.media-amazon.com/images/I/710t0V7tjuL._AC_SY200_.jpg" alt="Los Angeles"  width="270px"  height="200px" class="card-img">
+                              </div>
+                         </div>
+                         <div class="col-2.4">
+                            <div class="card "style="border: 0;"> 
+                               <img src="https://m.media-amazon.com/images/I/71c0VTbO5bL._AC_SY200_.jpg" alt="Los Angeles"  width="270px"  height="200px" class="card-img">
+                               </div> 
+                         </div>
+        
+                </div>
+                </div>
+        
+        
+                <a class="carousel-control-prev" href="#demoo" data-slide="prev">
+                    <span style="background-color: black;" class="carousel-control-prev-icon"></span>
+                  </a>
+                  <a class="carousel-control-next" href="#demoo" data-slide="next">
+                    <span style="background-color: black;" class="carousel-control-next-icon"></span>
+                 </a>
+                
+               </div>
+        
+           </div>
+     </section>
+    
+
+     <!-- FOOTER  -->
+     <footer class="container-fluid-lg">
+        <footer  style="background-color:#37475A; width: 100%; height: 49px; display: flex; justify-content: center; align-items: center;">
+            <span><a href="#mainbody" style="text-decoration: none; color: #FFFF;">Back to top</a></span>
+        </footer>
+       
+         <footer style="background-color: #232F3E;height:294.8px ;display: flex;justify-content: center;">
+            <div class="row" >
+                <div class="col-1.7" style="width:132.94px ; height: 200px;">
+                    <div class="footer-pad">  
+                        <h5  style="color:white; text-decoration:none; font-size: 16px;font-weight: 500;">Get to Know Us</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#" style="color:white; text-decoration:none; font-size: 14px;">About Amazon</a></li>
+                            <li><a href="#" style="color:white; text-decoration:none; font-size: 14px;">Careers</a></li>
+                            <li><a href="#" style="color:white; text-decoration:none; font-size: 14px;">Press Releases</a></li>
+                            <li><a href="#" style="color:white; text-decoration:none; font-size: 14px;">Amazon Science</a></li>
+                        </ul>
+                      </div>  
+                </div>
+                <div class="col-1.7" style="width: 80px; ; height: 200px;"></div>
+                <div class="col-1.7" style="width:138.94px ;height: 200px;">
+                    <div class="footer-pad">  
+                        <h5  style="color:white; text-decoration:none; font-size: 16px;font-weight: 500;">Make Money with Us</h5>  
+                        <ul class="list-unstyled">
+                             <li><a href="#" style="color:white; text-decoration:none; font-size: 14px;">Sell on Amazon</a></li>
+                            <li><a href="#" style="color:white; text-decoration:none; font-size: 14px;">Amazon Associates</a></li>
+                            <li><a href="#" style="color:white; text-decoration:none; font-size: 14px;">Sell Your Services on Amazon</a></li>
+                            <li><a href="#" style="color:white; text-decoration:none; font-size: 14px;">Advertise Your Products</a></li>
+                        </ul>
+                      </div>
+                </div>
+                <div class="col-1.7" style="width:80px ;height: 200px;"></div>
+                <div class="col-1.7" style="width:207.76px ;height: 200px;">
+                    <div class="footer-pad">  
+                        <h5  style="color:white; text-decoration:none; font-size: 16px;font-weight: 500;">Amazon Payment Products</h5>
+                        <ul class="list-unstyled">  
+                           
+                            <li><a href="#" style="color:white; text-decoration:none; font-size: 14px;">Amazon Business Card</a></li>
+                            <li><a href="#" style="color:white; text-decoration:none; font-size: 14px;">Shop with Points</a></li>
+                            <li><a href="#" style="color:white; text-decoration:none; font-size: 14px;">Reload Your Balance</a></li>
+                            <li> 
+                        </ul>  
+                      </div>  
+                </div>
+                <div class="col-1.7" style="width:80px ;height: 200px;"></div>
+                <div class="col-1.7" style="width:224.5px ;height: 200px;">
+                    <div class="footer-pad">  
+                        <h6 style="color:white; text-decoration:none; font-size: 16px;font-weight: 500;">Let Us Help You</h6> 
+                        <ul class="list-unstyled">  
+                            
+                            <li><a href="#" style="color:white; text-decoration:none; font-size: 14px;">Your Account</a></li>
+                            <li><a href="#" style="color:white; text-decoration:none; font-size: 14px;">Your Orders</a></li>
+                            <li><a href="#" style="color:white; text-decoration:none; font-size: 14px;">Shipping Rates & Policies</a></li>
+                            <li><a href="#" style="color:white; text-decoration:none; font-size: 14px;">Help</a></li>  
+                        </ul>  
+                </div>
+                </div>
+                
+            </div>
+         </footer> 
+         <footer  style="background-color: #131A22; width: 100%;height: 300px;">
+            <div id="rowonw" style="display: flex; justify-content: center; align-items: center;">
+            <div class="row">
+                <div class="col-1.7" style="width:132.94px ; height: 100px;">
+                    <div class="footer-pad">  
+                        <h5 style="color:rgb(194, 183, 183); text-decoration:none; font-size: 13px;font-weight: 500;">Get to Know Us</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#" style="color:rgb(194, 183, 183); text-decoration:none; font-size: 10px;">About Amazon</a></li>
+                            <li><a href="#"  style="color:rgb(194, 183, 183); text-decoration:none; font-size: 10px;">Careers</a></li>
+                            
+                        </ul>
+                      </div>  
+                </div>
+                <div class="col-1.7" style="width: 80px; ; height: 100px;"></div>
+                <div class="col-1.7" style="width:138.94px ;height: 100px;">
+                    <div class="footer-pad">  
+                        <h5  style="color:rgb(194, 183, 183); text-decoration:none; font-size: 13px;font-weight: 500;">Make Money with Us</h5>  
+                        <ul class="list-unstyled">
+                             <li><a href="#"   style="color:rgb(194, 183, 183); text-decoration:none; font-size: 10px;">Sell on Amazon</a></li>
+                            <li><a href="#"  style="color:rgb(194, 183, 183); text-decoration:none; font-size: 10px;">Amazon Associates</a></li>
+                           
+                        </ul>
+                      </div>
+                </div>
+                <div class="col-1.7" style="width:80px ;height: 100px;"></div>
+                <div class="col-1.7" style="width:207.76px ;height: 100px;">
+                    <div class="footer-pad">  
+                        <h5  style="color:rgb(194, 183, 183); text-decoration:none; font-size: 13px;font-weight: 500;">Amazon Payment Products</h5>
+                        <ul class="list-unstyled">  
+                           
+                            <li><a href="#"  style="color:rgb(194, 183, 183); text-decoration:none; font-size: 10px;">Amazon Business Card</a></li>
+                            <li><a href="#" style="color:rgb(194, 183, 183); text-decoration:none; font-size: 10px;">Shop with Points</a></li>
+                            <li><a href="#" style="color:rgb(194, 183, 183); text-decoration:none; font-size: 10px;">Reload Your Balance</a></li>
+                            <li> 
+                        </ul>  
+                      </div>  
+                </div>
+                <div class="col-1.7" style="width:80px ;height: 100px;"></div>
+                <div class="col-1.7" style="width:224.5px ;height: 100px;">
+                    <div class="footer-pad">  
+                        <h6 style="color:rgb(194, 183, 183); text-decoration:none; font-size: 13px;font-weight: 500;">Let Us Help You</h6> 
+                        <ul class="list-unstyled">  
+                            
+                            <li><a href="#"   style="color:rgb(194, 183, 183); text-decoration:none; font-size: 10px;">Your Account</a></li>
+                            <li><a href="#"   style="color:rgb(194, 183, 183); text-decoration:none; font-size: 10px;">Your Orders</a></li>
+                            
+                        </ul>  
+                      </div>  
+                </div>
+            </div>
+                
+            </div>
+            <div id="rowonww" style="display: flex; justify-content: center; align-items: center;">
+                <div class="row">
+                    <div class="col-1.7" style="width:132.94px ; height: 200px;">
+                        <div class="footer-pad">  
+                            <h5 style="color:rgb(194, 183, 183); text-decoration:none; font-size: 13px;font-weight: 500;">Get to Know Us</h5>
+                            <ul class="list-unstyled">
+                                <li><a href="#"  style="color:rgb(194, 183, 183); text-decoration:none; font-size: 10px;">About Amazon</a></li>
+                                <li><a href="#"  style="color:rgb(194, 183, 183); text-decoration:none; font-size: 10px;">Careers</a></li>
+                                
+                            </ul>
+                          </div>  
+                    </div>
+                    <div class="col-1.7" style="width: 80px; ; height: 200px;"></div>
+                    <div class="col-1.7" style="width:138.94px ;height: 200px;">
+                        <div class="footer-pad">  
+                            <h5 style="color:rgb(194, 183, 183); text-decoration:none; font-size: 13px;font-weight: 500;">Make Money with Us</h5>  
+                            <ul class="list-unstyled">
+                                 <li><a href="#"   style="color:rgb(194, 183, 183); text-decoration:none; font-size: 10px;">Sell on Amazon</a></li>
+                                <li><a href="#"  style="color:rgb(194, 183, 183); text-decoration:none; font-size: 10px;">Amazon Associates</a></li>
+                               
+                            </ul>
+                          </div>
+                    </div>
+                    <div class="col-1.7" style="width:80px ;height: 200px;"></div>
+                    <div class="col-1.7" style="width:207.76px ;height: 200px;">
+                        <div class="footer-pad">  
+                            <h5 style="color:rgb(194, 183, 183); text-decoration:none; font-size: 13px;font-weight: 500;">Amazon Payment Products</h5>
+                            <ul class="list-unstyled">  
+                               
+                                <li><a href="#"   style="color:rgb(194, 183, 183); text-decoration:none; font-size: 10px;">Amazon Business Card</a></li>
+                                <li><a href="#"  style="color:rgb(194, 183, 183); text-decoration:none; font-size: 10px;">Shop with Points</a></li>
+                                <li><a href="#"   style="color:rgb(194, 183, 183); text-decoration:none; font-size: 10px;">Reload Your Balance</a></li>
+                                <li> 
+                            </ul>  
+                          </div>  
+                    </div>
+                    <div class="col-1.7" style="width:80px ;height: 200px;"></div>
+                    <div class="col-1.7" style="width:224.5px ;height: 200px;">
+                        <div class="footer-pad">  
+                            <h6 style="color:rgb(194, 183, 183); text-decoration:none; font-size: 13px;font-weight: 500;">Let Us Help You</h6> 
+                            <ul class="list-unstyled">  
+                                
+                                <li><a href="#"  style="color:rgb(194, 183, 183); text-decoration:none; font-size: 10px;">Your Account</a></li>
+                                <li><a href="#"  style="color:rgb(194, 183, 183); text-decoration:none; font-size: 10px;">Your Orders</a></li>
+                                
+                            </ul>  
+                          </div>  
+                    </div>
+                </div>
+                    
+                </div>
+                
+         </footer>
+
+    
+</body>
+</html>
